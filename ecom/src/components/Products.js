@@ -1,13 +1,16 @@
 import React from "react"
 import { useDispatch } from "react-redux"
 import { addToCart, calculateTotals } from "../features/cart/cartSlice"
+import { openModal } from "../features/modal/modalSlice"
 
 function Products({ id, title, price, img, mrp }) {
   const dispatch = useDispatch()
   const handleAddToCart = () => {
     dispatch(addToCart({ id, title, price, img, amount: 1, mrp }))
     dispatch(calculateTotals())
+    dispatch(openModal())
   }
+
   return (
     <>
       <div>
