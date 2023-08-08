@@ -6,26 +6,32 @@ import { Link } from "react-router-dom"
 const Modal = () => {
   const dispatch = useDispatch()
   return (
-    <div className="fixed inset-0 flex items-center justify-center">
-      <div className="bg-black border border-white w-80 max-w-xs rounded-lg p-6">
-        <h4 className="mb-4 text-white text-center text-lg font-semibold">
-          ITEM ADDED TO CART
-        </h4>
-        <div className="flex justify-center space-x-4">
+    <div className="fixed inset-0 flex items-center justify-center ">
+      <div className="flex flex-col items-center justify-around bg-black border border-white w-80 max-w-xs rounded-lg py-8">
+        <div>
+          <h4 className=" text-white text-center text-2xl font-semibold">
+            Item added to cart
+          </h4>
+        </div>
+
+        <div className="mt-4">
           <button
             onClick={() => dispatch(closeModal())}
             type="button"
-            className="bg-black border border-white text-white hover:bg-primary-light py-2 px-4 rounded-md font-semibold"
+            className="bg-black border w-40 p-2 border-white text-white hover:bg-zinc-700 active:bg-black rounded-md font-semibold"
           >
-            CONTINUE SHOPPING
+            Continue shopping
           </button>
+        </div>
+
+        <div className=" mt-3">
           <Link to="/ShopContain">
             <button
               onClick={() => dispatch(closeModal())}
               type="button"
-              className="bg-black border border-white text-white hover:bg-red-light py-2 px-4 rounded-md font-semibold"
+              className="bg-black border w-40 p-2 border-white text-white hover:bg-zinc-700 active:bg-black rounded-md font-semibold"
             >
-              GO TO CART
+              Go to cart
             </button>
           </Link>
         </div>
