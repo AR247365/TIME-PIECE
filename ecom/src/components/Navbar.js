@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const { amount } = useSelector((state) => state.cart)
-  console.log("Amount in Navbar:", amount)
+  //console.log("Amount in Navbar:", amount)
   return (
     <>
       <nav className=" ">
@@ -29,11 +29,13 @@ const Navbar = () => {
                 />
               </svg>
 
-              <div className="absolute top-[-0.375rem] right-[-0.375rem] w-4 h-4 rounded-full bg-primary-light flex items-center justify-center">
-                <p className="text-base font-semibold min-[350px]:text-xl text-white">
-                  {amount}
-                </p>
-              </div>
+              {amount > 0 && (
+                <div className="absolute top-[-0.375rem] right-[-0.375rem] w-4 h-4 rounded-full bg-primary-light flex items-center justify-center">
+                  <p className="text-base font-semibold min-[350px]:text-xl text-white">
+                    {amount}
+                  </p>
+                </div>
+              )}
             </div>
           </Link>
         </div>
