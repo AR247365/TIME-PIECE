@@ -6,10 +6,13 @@ import { Link } from "react-router-dom"
 const Modal = () => {
   const dispatch = useDispatch()
   return (
-    <div className="fixed inset-0 flex items-center justify-center ">
-      <div className="flex flex-col items-center justify-around bg-black border border-white w-80 max-w-xs rounded-lg py-8">
+    <div className="fixed inset-0 flex items-center justify-center">
+      {/* Background overlay */}
+      <div className="fixed inset-0 bg-black opacity-80"></div>
+
+      <div className="flex flex-col items-center justify-around bg-black border border-white w-80 max-w-xs rounded-lg py-8 relative z-10">
         <div>
-          <h4 className=" text-white text-center text-2xl font-semibold">
+          <h4 className="text-white text-center text-2xl font-semibold">
             Item added to cart
           </h4>
         </div>
@@ -24,7 +27,7 @@ const Modal = () => {
           </button>
         </div>
 
-        <div className=" mt-3">
+        <div className="mt-3">
           <Link to="/ShopContain">
             <button
               onClick={() => dispatch(closeModal())}
