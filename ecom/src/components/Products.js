@@ -37,7 +37,7 @@ function Products({ id, title, price, img, mrp }) {
             </div>
             <button
               onClick={handleAddToCart}
-              className="font-semibold border-2 border-white py-2 px-4 bg-black text-white rounded hover:bg-zinc-700 active:bg-black disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+              className=" transition-all font-semibold border-2 border-white py-2 px-4 bg-black text-white rounded hover:bg-zinc-700 active:bg-black disabled:opacity-50 mt-4 w-full flex items-center justify-center"
             >
               Add to cart
             </button>

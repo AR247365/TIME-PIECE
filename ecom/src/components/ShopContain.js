@@ -104,7 +104,7 @@ const ShopContain = () => {
                   onClick={() => {
                     dispatch(clearCart())
                   }}
-                  className="w-28 text-white text-xl font-medium border hover:bg-zinc-700 active:bg-black rounded-xl border-white m-2 p-2"
+                  className="transition-all w-28 text-white text-xl font-medium border hover:bg-zinc-700 active:bg-black rounded-xl border-white m-2 p-2"
                 >
                   Clear cart
                 </button>
@@ -112,7 +112,7 @@ const ShopContain = () => {
               <div>
                 <button
                   onClick={() => dispatch(openModal())}
-                  className="w-28 text-white text-xl font-medium border hover:bg-zinc-700 active:bg-black rounded-xl border-white m-2 p-2"
+                  className="transition-all w-28 text-white text-xl font-medium border hover:bg-zinc-700 active:bg-black rounded-xl border-white m-2 p-2"
                 >
                   Buy
                 </button>

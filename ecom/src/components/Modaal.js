@@ -20,7 +20,7 @@ const Modaal = () => {
       <div className="flex flex-col items-center justify-around bg-black border border-white w-80 max-w-xs rounded-lg py-7  relative z-10">
         <div>
           <h4 className="text-white text-center text-3xl font-semibold">
-            Thanks for buying
+            Thanks for shopping
           </h4>
         </div>
 
@@ -29,7 +29,7 @@ const Modaal = () => {
             <button
               onClick={handleClick}
               type="button"
-              className="bg-black border w-40 p-2 border-white text-white hover:bg-zinc-700 active:bg-black rounded-md font-semibold"
+              className="transition-all bg-black border w-40 p-2 border-white text-white hover:bg-zinc-700 active:bg-black rounded-md font-semibold"
             >
               Go back to homepage
             </button>
