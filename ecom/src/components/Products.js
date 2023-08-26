@@ -26,9 +26,9 @@ function Products({ id, title, price, img, mrp }) {
             ></div>
             <div className="mt-3">
               <h1 className="text-white text-center font-semibold">
-                Jacob & Co.
+                Brand Name
               </h1>
-              <h1 className="text-white text-center mt-1 font-semibold h-12 overflow-hidden">
+              <h1 className="text-white text-center mt-1 font-semibold h-8 ">
                 {title}
               </h1>
               <p className="text-center text-white pt-0 mt-0 font-semibold">

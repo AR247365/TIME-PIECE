@@ -21,7 +21,7 @@ function Footer() {
           This website is for educational and practice purposes only. The
           product images & product names used are for demonstration purposes and
           belong to their respective owners. This website is not affiliated
-          with, endorsed by, or sponsored by Jacob & Co. or any other brand.
+          with, endorsed by, or sponsored by any brand.
         </p>
       </div>
       <br />
